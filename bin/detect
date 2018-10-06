@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ -f $1/Gemfile ] && [ -f $1/lib/tasks/error_pages.rake ]; then
+  echo "Error pages"
+  exit 0
+else
+  exit 1
+fi
